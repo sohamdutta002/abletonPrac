@@ -1,4 +1,5 @@
 import React from 'react'
+import banner from '../assets/banner.avif'
 
 const Home = () => {
   return (
@@ -20,7 +21,7 @@ const Home = () => {
                     </ul>
                     <p className='lg:hidden'>Menu</p>
                 </div>
-                <ul className='hidden lg:flex float-right gap-8 items-center ml-12'>
+                <ul className='hidden lg:flex float-right gap-8 items-center mr-12'>
                     <li className='text-[#0000ff]'><a href='#'>Try Live for free</a></li>
                     <li className='text-[1rem]'><a href='#'>Log in or register</a></li>
                 </ul>
@@ -34,7 +35,15 @@ const Home = () => {
                 </ul>
             </nav>
         </header>
-
+        <div className="page">
+            <main>
+                <div className="page-about">
+                    <header className='w-full h-[94vh] overflow-hidden p-12'>
+                        <img src={banner} className='w-full h-full object-cover' />
+                    </header>
+                </div>
+            </main>
+        </div>
     </div>
   )
 }
