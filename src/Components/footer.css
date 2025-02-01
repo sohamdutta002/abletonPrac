@@ -1,0 +1,10 @@
+h2{
+    font-weight: 600;
+}
+li::after{
+    content: " >";
+}
+li{
+    cursor: pointer;
+    margin-top: 1.2px;
+}
